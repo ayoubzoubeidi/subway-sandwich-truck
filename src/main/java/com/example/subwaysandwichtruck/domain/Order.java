@@ -1,9 +1,12 @@
 package com.example.subwaysandwichtruck.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -26,4 +29,10 @@ public class Order {
     private Set<OrderLine> orderLines = new HashSet<>();
 
     private BigDecimal totalPrice;
+
+    @CreationTimestamp
+    private LocalDateTime createdAt;
+    @UpdateTimestamp
+    private LocalDateTime updatedAt;
+
 }

@@ -1,6 +1,6 @@
 package com.example.subwaysandwichtruck.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;

@@ -10,7 +10,7 @@ import com.example.subwaysandwichtruck.repository.OrderRepository;
 import com.example.subwaysandwichtruck.service.OrderService;
 import com.example.subwaysandwichtruck.web.dto.OrderLineRequest;
 import com.example.subwaysandwichtruck.web.dto.PlaceOrderRequest;
-import jakarta.transaction.Transactional;
+import javax.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
