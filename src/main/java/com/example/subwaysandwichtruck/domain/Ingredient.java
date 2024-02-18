@@ -21,7 +21,7 @@ public class Ingredient {
     private BigDecimal price;
     private Integer availableQuantity;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "type_id")
     private IngredientType ingredientType;
     @OneToMany(mappedBy = "ingredient", fetch = FetchType.LAZY)
